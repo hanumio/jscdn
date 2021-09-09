@@ -1,5 +1,5 @@
 setInterval(() => {
-  let create_time = Math.round(new Date('2019-04-17 00:00:00').getTime() / 1000); //在此行修改建站时间
+  let create_time = Math.round(new Date('2019-09-09 09:09:09').getTime() / 1000); //在此行修改建站时间
   let timestamp = Math.round((new Date().getTime()) / 1000);
   let second = timestamp - create_time;
   let time = new Array(0, 0, 0, 0, 0);
@@ -27,10 +27,10 @@ setInterval(() => {
     time[4] = nol(second);
   }
   if ((Number(time[2])<22) && (Number(time[2])>7)){
-    currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/Galaxy-Ing-6adea8?style=social&logo=cakephp' title='Galaxy'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
+    currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/👑Galaxy-Ing-6adea8?style=social' title='Galaxy'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
   }
   else{
-    currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/Star-Ing-6adea8?style=social&logo=coffeescript' title='Star'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
+    currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/✨Star-Ing-6adea8?style=social' title='Star'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
   }
   document.getElementById("workboard").innerHTML = currentTimeHtml;
 }, 1000);
